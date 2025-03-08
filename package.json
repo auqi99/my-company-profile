@@ -9,16 +9,29 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@react-three/fiber": "^9.0.4",
+    "@tabler/icons-react": "^3.30.0",
+    "clsx": "^2.1.1",
+    "colors": "^1.4.0",
+    "default-theme": "^5.44.0",
+    "framer-motion": "^12.4.7",
+    "gsap": "^3.12.7",
+    "motion": "^12.4.7",
+    "next": "15.1.7",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "next": "15.1.7"
+    "tailwind-merge": "^3.0.2",
+    "three": "^0.173.0"
   },
   "devDependencies": {
-    "typescript": "^5",
     "@types/node": "^20",
-    "@types/react": "^19",
-    "@types/react-dom": "^19",
+    "@types/react": "^19.0.10",
+    "@types/react-dom": "^19.0.4",
+    "@types/three": "^0.173.0",
     "postcss": "^8",
-    "tailwindcss": "^3.4.1"
+    "prettier": "^3.5.2",
+    "prettier-plugin-tailwindcss": "^0.6.11",
+    "tailwindcss": "^3.4.17",
+    "typescript": "^5"
   }
 }

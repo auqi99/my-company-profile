@@ -1,15 +1,21 @@
 "use client";
 
-"use client";
-
+import Image from "next/image";
+import Script from "next/script";
 
 const Overview = () => {
   return (
-    <nav className="md:relative relative flex h-auto justify-center sm:h-auto md:min-h-[250px]">
+    <nav className="relative flex h-auto justify-center sm:h-auto md:relative md:min-h-[250px]">
+      {/* Lazy Load External Scripts */}
+      <Script src="https://example.com/somescript.js" strategy="lazyOnload" />
+
       <section className="px-4 pt-8 sm:px-2">
-        <p className="bg-gradient-to-r from-purple-600 via-blue-500 bg-clip-text text-center text-3xl font-bold text-transparent sm:text-xl md:text-2xl">
+        {/* Company Overview Title */}
+        <p className="bg-gradient-to-r from-purple-600 via-blue-500 bg-clip-text text-center text-xl font-bold text-transparent sm:text-lg md:text-xl">
           Company Overview
         </p>
+
+        {/* Company Description (Optimized for LCP) */}
         <p className="mx-auto mt-4 max-w-5xl text-center text-base sm:text-sm">
           NusantaraKitchen is a leading F&B company dedicated to preserving and
           modernizing Indonesian cuisine by blending authentic flavors with

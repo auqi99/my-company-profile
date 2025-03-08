@@ -1,7 +1,5 @@
-import React from "react";
 import { BackgroundLines } from "@/components/ui/background-lines";
 import { InfiniteMovingCards } from "@/components/ui/infinite-moving-cards";
-import { TextGenerateEffect } from "@/components/ui/text-generate-effect";
 
 export function BackgroundLinesDemo() {
   const testimonials = [

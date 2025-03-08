@@ -2,13 +2,10 @@
 
 "use client";
 
-import { ThreeDCardDemo } from "@/app/3d-card";
-import { CardStackDemo } from "@/app/card-stack";
-import CountUp from "./ui/count-up";
 
 const Overview = () => {
   return (
-    <nav className="md:relative relative z-20 flex h-auto justify-center sm:h-auto md:min-h-[300px]">
+    <nav className="md:relative relative flex h-auto justify-center sm:h-auto md:min-h-[250px]">
       <section className="px-4 pt-8 sm:px-2">
         <p className="bg-gradient-to-r from-purple-600 via-blue-500 bg-clip-text text-center text-3xl font-bold text-transparent sm:text-xl md:text-2xl">
           Company Overview

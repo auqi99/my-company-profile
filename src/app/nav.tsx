@@ -2,6 +2,8 @@
 import React from "react";
 import { FloatingNav } from "@/components/ui/floating.nav";
 import { IconHome, IconMessage, IconUser } from "@tabler/icons-react";
+import { MdOutlineRoomService } from "react-icons/md";
+import { SiAboutdotme } from "react-icons/si";
 export function FloatingNavDemo() {
   const navItems = [
     {
@@ -14,13 +16,15 @@ export function FloatingNavDemo() {
     {
       name: "About Us",
       link: "/about",
-      icon: <IconUser className="h-4 w-4 text-neutral-500 dark:text-white" />,
+      icon: (
+        <SiAboutdotme className="h-4 w-4 text-neutral-500 dark:text-white" />
+      ),
     },
     {
       name: "Services",
       link: "/services",
       icon: (
-        <IconMessage className="h-4 w-4 text-neutral-500 dark:text-white" />
+        <MdOutlineRoomService className="h-4 w-4 text-neutral-500 dark:text-white" />
       ),
     },
   ];

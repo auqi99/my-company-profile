@@ -44,7 +44,7 @@ const TeamPage = () => {
 
     const fetchTeamMembers = async () => {
       try {
-        const response = await fetch("https://randomuser.me/api/?results=6", {
+        const response = await fetch("https://randomuser.me/api/?results=8", {
           signal,
         });
         if (!response.ok) throw new Error("Failed to fetch data");
@@ -86,54 +86,54 @@ const TeamPage = () => {
 
   return (
     <section className="container mx-auto">
-      <p className="mt-10 text-center text-3xl font-extrabold">
-        Let's Meet Our Team
-      </p>
+        <p className="mt-10 text-center text-3xl font-extrabold">
+          Let's Meet Our Team
+        </p>
 
-      {/* Ballpit sebagai Background */}
-      <div className="relative max-h-[700px] min-h-[700px] w-full overflow-hidden">
-        <Ballpit
-          count={200}
-          gravity={0.7}
-          friction={0.8}
-          wallBounce={0.95}
-          followCursor={true}
-        />
+        {/* Ballpit sebagai Background */}
+        <div className="relative h-screen w-full overflow-hidden">
+          <Ballpit
+            count={200}
+            gravity={0.7}
+            friction={0.8}
+            wallBounce={0.95}
+            followCursor={true}
+          />
 
-        {/* Grid TiltedCard */}
-        <div className="absolute inset-0 z-10 grid grid-cols-2 place-items-center gap-4 md:grid-cols-3">
-          {teamMembers.map((member) => (
-            <TiltedCard
-              key={member.id}
-              imageSrc={member.image}
-              altText={`Photo of ${member.name}, a ${member.profession}`}
-              captionText={
-                <>
-                  {member.name} - {member.profession} <br />
-                  <a
-                    href={`https://instagram.com/${member.contact.replace("@", "")}`}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label={`Visit ${member.name}'s Instagram`}
-                    className="text-blue-400 hover:underline"
-                  >
-                    {member.contact}
-                  </a>
-                </>
-              }
-              containerHeight="150px"
-              containerWidth="150px"
-              imageHeight="180px"
-              imageWidth="180px"
-              rotateAmplitude={10}
-              scaleOnHover={1.1}
-              showMobileWarning={false}
-              showTooltip={true}
-              displayOverlayContent={true}
-            />
-          ))}
+          {/* Grid TiltedCard */}
+          <div className="absolute inset-0 grid grid-cols-2 place-items-center gap-4 md:grid-cols-3 my-5">
+            {teamMembers.map((member) => (
+              <TiltedCard
+                key={member.id}
+                imageSrc={member.image}
+                altText={`Photo of ${member.name}, a ${member.profession}`}
+                captionText={
+                  <>
+                    {member.name} - {member.profession} <br />
+                    <a
+                      href={`https://instagram.com/${member.contact.replace("@", "")}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label={`Visit ${member.name}'s Instagram`}
+                      className="text-blue-400 hover:underline"
+                    >
+                      {member.contact}
+                    </a>
+                  </>
+                }
+                containerHeight="150px"
+                containerWidth="150px"
+                imageHeight="180px"
+                imageWidth="180px"
+                rotateAmplitude={10}
+                scaleOnHover={1.1}
+                showMobileWarning={false}
+                showTooltip={true}
+                displayOverlayContent={true}
+              />
+            ))}
+          </div>
         </div>
-      </div>
     </section>
   );
 };

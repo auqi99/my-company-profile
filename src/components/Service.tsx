@@ -29,8 +29,7 @@ const Service = () => {
                 >
                   Perpaduan nasi dan jagung yang gurih alami, memberikan cita
                   rasa unik dengan tekstur lembut dan aroma khas. Sajian
-                  tradisional bernutrisi tinggi yang cocok menemani hidangan
-                  utama.
+                  tradisional bernutrisi tinggi.
                 </CardItem>
                 <CardItem translateZ="80" className="mt-4 w-full">
                   <Image

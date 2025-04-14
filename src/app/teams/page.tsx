@@ -86,7 +86,7 @@ const TeamPage = () => {
 
   return (
     <section className="container mx-auto">
-        <p className="mt-10 text-center text-3xl font-extrabold">
+        <p className="mt-5 text-center text-3xl font-extrabold">
           Let's Meet Our Team
         </p>
 

@@ -13,7 +13,7 @@ interface Product {
 
 const ServicePage = () => {
   const [products, setProducts] = useState<Product[]>([]);
-  const API_URL = "https://quirkystore-us.backendless.app/api/data/Service";
+  const API_URL = "https://cleverkey-us.backendless.app/api/data/service";
 
   useEffect(() => {
     fetch(API_URL)

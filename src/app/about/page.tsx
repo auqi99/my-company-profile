@@ -1,5 +1,11 @@
 import { TextGenerateEffect } from "@/components/ui/text-generate-effect";
 import { BackgroundLinesDemo } from "../background-lines";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "About Us | NusantaraKitchen",
+  description: "Company Profile Website",
+};
 
 const page = () => {
   return (

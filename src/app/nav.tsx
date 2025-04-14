@@ -17,8 +17,8 @@ export function FloatingNavDemo() {
       icon: <IconUser className="h-4 w-4 text-neutral-500 dark:text-white" />,
     },
     {
-      name: "Service",
-      link: "/service",
+      name: "Services",
+      link: "/services",
       icon: (
         <IconMessage className="h-4 w-4 text-neutral-500 dark:text-white" />
       ),
